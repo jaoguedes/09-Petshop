@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto-Bold";
+    background-color: #cbcabf;
+    background-image: url(../img/caoo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* inserindo as fontes */
+@font-face {
+    font-family: "Poppins-Light";
+    src: url(../fonts/Poppins/Poppins-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../fonts/Roboto/Roboto-Black.ttf) format("truetype");
+}
+
+/* fim dos ajustes de fontes */
+#container {
+    background: linear-gradient(to bottom right,
+            rgb(61, 3, 108),
+            rgb(67, 15, 164));
+    justify-content: space-between;
+    display: flex;
+}
+
+#logo img {
+    width: 70px;
+}
+
+#logo {
+    display: flex;
+}
+
+h1 {
+    color: white;
+}
+
+#itens {
+    align-self: flex-end;
+    padding-bottom: 20px;
+    margin-right: 30px;
+    color: white;
+}
+
+#container a {
+    text-decoration: none;
+    color: white;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* nãoo entendi a utilidade dele, funciona bem sem */
+#person {
+    padding-right: 100px;
+}
+
+#container a {
+    text-decoration: none;
+    color: white;
+}
+
+/* miolo */
+#miolo {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+#forma-contato {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    background: #41295a;
+    background: -webkit-linear-gradient(to top, #2F0743, #41295a);
+    background: linear-gradient(to top, #2F0743, #41295a);
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#forma-contato h3 {
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+#dados-contato h2 {
+    color: white;
+}
+#dados-contato {
+    width: 25%;
+    margin-right: 30px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#dados-contato button {
+    margin: 25px 15px 0px 15px;
+    padding: 8px 40px;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+#frm-contato input,
+textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    padding: 5px 10px;
+}
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    height: 40px;
+    font-family: "Roboto-Bold";
+    margin-top: 160px;
+  }
+  footer span {
+    font-family: "Roboto-Black";
+    font-weight: bolder;
+  }
+  footer p {
+    font-size: 25px;
+  }
+  @media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        width: 768px;
+      }
+    
+      #itens {
+        align-self: center;
+        padding-bottom: 20px;
+        margin-right: 30px;
+        color: white;
+      }
+      #person {
+        padding: 0;
+      }
+      #logo {
+        margin-left: 180px;
+      }
+      #logo img {
+        width: 83px;
+      }
+      #miolo {
+        flex-direction: column;
+        margin-left: 170px;
+      }
+      footer {
+        width: 768px;
+      }
+  }
